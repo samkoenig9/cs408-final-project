@@ -1,0 +1,80 @@
+
+/*====================== MAIN CONTENT ======================*/
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: min-content;
+    width: 100%;
+    gap: 5vw;
+    margin-top: 200px;
+
+    outline: red 1px solid; /* DEBUG */
+}
+
+.welcome {
+    justify-content: space-between;
+    text-align: left;
+    padding: 20px;
+    color: black;
+    position: relative;
+    height: min-content;
+    width: 35vw;
+
+    outline: blue 1px solid; /* DEBUG */
+}
+
+.welcome h1 {
+    font-size: 40pt;
+}
+
+.welcome h3 {
+    font-size: 20pt;
+}
+
+.welcome-img {
+    width: 50vw;
+    height: 100%;
+
+    outline: blue 1px solid; /* DEBUG */
+}
+
+/*====================== CAROUSEL ======================*/
+
+.carousel {
+    margin: 100px auto;
+    height: min-content;
+    width: 100%;
+
+    outline: red 1px solid; /* DEBUG */
+}
+
+.carousel h2 { /* header */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.carousel h3 { /* footer */
+    text-align: center;
+}
+
+.carousel-content {
+    height: min-content;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    outline: blue 1px solid; /* DEBUG */
+}
+
+.carousel-item {
+    height: 150px;
+    width: 200px;
+    background-color: lightgray;
+    display: inline-block;
+    margin-right: 20px;
+}

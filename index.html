@@ -3,16 +3,46 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Hello World!</title>
+  <title>Google Guillotine</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script type="module" src="js/main.js"></script>
 </head>
 
 <body>
-  <h1>HTML Rocks!</h1>
-  <img src="img/compile.jpeg">
-  <script type="module" src="js/main.js"></script>
+  <header>
+    <a href="/"><img src="img/logo.png" alt="Logo"></a>
+    <div class="header-left">
+      <a class="header-link" onclick="location.href='pages/vote.html'">Vote</a>
+      <a class="header-link" onclick="location.href='pages/submit.html'">Submit</a>
+      <a class="header-link" onclick="location.href='pages/results.html'">Results</a>
+    </div>
+    <div class="header-right">
+      <a class="header-link" onclick="location.href='pages/admin.html'">Admin Panel</a>
+    </div>
+  </header>
+
+  <div class="main-content">
+    <div class="welcome">
+      <h1>Welcome</h1>
+      <h3>Welcome subtext Welcome subtext Welcome subtext Welcome subtext Welcome subtext </h3>
+    </div>
+    <img class="welcome-img" src="img/1920x1080.png" alt="Welcome Image">
+  </div>
+
+  <div class="carousel">
+    <h2>CAROUSEL HEADER</h2>
+    <div class="carousel-content">
+      <div class="carousel-item">ITEM 1</div>
+      <div class="carousel-item">ITEM 2</div>
+      <div class="carousel-item">ITEM 3</div>
+      <div class="carousel-item">ITEM 4</div>
+      <div class="carousel-item">ITEM 5</div>
+    </div>
+    <h3>CAROUSEL FOOTER</h3>
+  </div>
 </body>
 
 </html>
