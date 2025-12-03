@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/submit.css">
+  <link rel="stylesheet" href="../css/vote.css">
   <script type="module" src="../js/main.js"></script>
 </head>
 
@@ -25,7 +26,32 @@
   </header>
 
   <div class="content">
-    <h1>Submit Page</h1>
+    <h1 class="submit-header">Submit</h1>
+    <div class="submit-container">
+
+      <form class="submit-form">
+        <label class="submit-label" for="product-name">Product Name:</label>
+        <input class="submit-input"type="text" id="product-name" name="product-name" placeholder="ex. Google Search">
+
+        <label class="submit-label" for="product-url">Product URL:</label>
+        <input class="submit-input" type="url" id="product-url" name="product-url" placeholder="ex. https://www.google.com/">
+
+        <label class="submit-label" for="product-image">Product Logo URL:</label>
+        <input class="submit-input" type="url" id="product-image" name="product-image" placeholder="Please link a square and transparent image">
+
+        <button type="submit" class="submit-button">Submit</button>
+      </form>
+
+      <div class="vote-item card-preview">
+        <img src="../img/square.jpg" alt="Item 1" class="item-logo">
+        <h3>PRODUCT</h3>
+        <div class="vote-buttons">
+          <button class="vote-button kill" disabled>🔪 Kill</button>
+          <button class="vote-button spare" disabled>😇 Spare</button>
+        </div>
+      </div>
+
+    </div>
   </div>
 </body>
 

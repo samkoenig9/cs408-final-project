@@ -1,0 +1,51 @@
+
+.results-header {
+    text-align: center;
+    font-size: 32pt;
+    margin-top: 125px;
+}
+
+/*====================== GRAVEYARD ======================*/
+
+.results-items {
+    width: 70vw;
+    height: max-content;
+    margin: 40px auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 60px;
+    align-items: stretch;
+
+    outline: red 1px solid; /* DEBUG */
+}
+
+.results-item {
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    padding: 40px 15px 30px 15px;
+    font-size: 18pt;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px 999px 0 0;
+}
+
+.item-logo {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.results-item h3 {
+    margin: 15px 0;
+}
+
+.results-item p {
+    margin: 10px 0 5px 0;
+    font-size: 14pt;
+}

@@ -1,0 +1,55 @@
+
+.submit-header {
+    text-align: center;
+    font-size: 32pt;
+    margin-top: 125px;
+}
+
+.submit-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10vw;
+    margin: 50px auto 0 auto;
+    width: min-content;
+
+    /* outline: red 1px solid; DEBUG */
+}
+
+/*====================== FORM ======================*/
+
+.submit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 400px;
+    padding: 15px;
+    background-color: #f0f0f0;
+}
+
+.submit-label {
+    font-size: 14pt;
+    margin: 5px 0 -10px 0;
+}
+
+.submit-input {
+    height: 30px;
+    font-size: 12pt;
+    padding: 5px 10px;
+    border: 2px solid #ccc;
+    position: relative;
+}
+
+.submit-button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 14pt;
+    cursor: pointer;
+}
+
+/*====================== CARD PREVIEW ======================*/
+
+.card-preview {
+    height: 360px;
+    width: 260px;
+}
