@@ -9,8 +9,6 @@
     width: 100%;
     gap: 5vw;
     margin-top: 200px;
-
-    outline: red 1px solid; /* DEBUG */
 }
 
 .welcome {
@@ -20,24 +18,23 @@
     color: black;
     position: relative;
     height: min-content;
-    width: 35vw;
-
-    outline: blue 1px solid; /* DEBUG */
+    width: 25vw;
 }
 
 .welcome h1 {
     font-size: 40pt;
+    margin: 15px 0;
 }
 
-.welcome h3 {
-    font-size: 20pt;
+.welcome p {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--gray);
 }
 
 .welcome-img {
     width: 50vw;
     height: 100%;
-
-    outline: blue 1px solid; /* DEBUG */
 }
 
 /*====================== CAROUSEL ======================*/
@@ -46,8 +43,6 @@
     margin: 100px auto;
     height: min-content;
     width: 100%;
-
-    outline: red 1px solid; /* DEBUG */
 }
 
 .carousel h2 { /* header */
@@ -55,8 +50,12 @@
     margin-bottom: 20px;
 }
 
-.carousel h3 { /* footer */
+.carousel p { /* footer */
     text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 100;
+    color: var(--gray);
 }
 
 .carousel-content {
@@ -67,14 +66,21 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-
-    outline: blue 1px solid; /* DEBUG */
 }
 
 .carousel-item {
     height: 150px;
     width: 200px;
-    background-color: lightgray;
-    display: inline-block;
+    border-radius: 16px;
+    background-color: white;
     margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-shadow: 0 .5px 2px #3640434d,0 2px 4px 1px #36404326;
+}
+
+.carousel-logo {
+    height: 65%;
+    width: auto;
 }

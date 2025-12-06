@@ -1,4 +1,27 @@
 
+/*====================== FONT ======================*/
+
+:root {
+    --gray: #5F6368;
+    --blue: #1967D2;
+    --darkblue: #174ea6;
+    --green: #34A853;
+    --darkgreen: #188038;
+    --red: #EA4335;
+    --darkred: #c62c21;
+}
+
+@font-face { font-family: product-sans; src: url('../fonts/ProductSansRegular.ttf'); }
+@font-face { font-family: product-sans; font-style: italic; src: url('../fonts/ProductSansItalic.ttf');}
+@font-face { font-family: product-sans; font-weight: bold; src: url('../fonts/ProductSansBold.ttf');}
+@font-face { font-family: product-sans; font-weight: bold; font-style: italic; src: url('../fonts/ProductSansBoldItalic.ttf');}
+
+* {
+    font-family: product-sans, sans-serif;
+}
+
+
+
 /*====================== HEADER ======================*/
 
 header {
@@ -15,43 +38,35 @@ header {
   z-index: 1000;
   background-color: white;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08), inset 0 -1px #dadce0b9;
-
-  outline: red 1px solid; /* DEBUG */
 }
 
 header img {
   height: 50px;
-
-  outline: blue 1px solid; /* DEBUG */
 }
 
 .header-left {
     display: flex;
     gap: 60px;
     margin: 0 auto 0 60px;
-
-    outline: blue 1px solid; /* DEBUG */
 }
 
 .header-link {
-    font-size: 16pt;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: .25px;
     text-decoration: none;
-    color: black;
+    color: var(--gray);
     padding: 4px;
     cursor: pointer;
-
-    outline: green 1px solid; /* DEBUG */
 }
 
 .active {
-    font-weight: bold;
+    color: var(--blue);
 }
 
 .header-right {
     display: flex;
     gap: 10px;
-
-    outline: blue 1px solid; /* DEBUG */
 }
 
 .header-button {
