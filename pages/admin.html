@@ -3,12 +3,13 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Google Guillotine</title>
+  <title>Admin Panel - Google Guillotine</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/results.css">
+  <link rel="stylesheet" href="../css/vote.css">
   <script type="module" src="../js/main.js"></script>
+  <link rel="icon" href="../img/favicon.svg" sizes="any" type="image/svg+xml">
 </head>
 
 <body>
@@ -25,7 +26,27 @@
   </header>
 
   <div class="content">
-    <h1>SUPER SECRET!</h1>
+    <h1 style="text-align:center; font-size: 32pt; margin: 100px 0 20px;">Admin Panel</h1>
+    <h3 style="text-align:center; margin-bottom: 30px; color: var(--gray); font-style: italic;">With great power comes great responsibility...</h3>
+    <div style="text-align: center; margin-bottom: 30px;">
+      <a href="../test/test.html" target="_blank" style="display: inline-block;">
+        <button class="vote-button" style="background-color: var(--green)">QUnit Tests</button>
+      </a>
+    </div>
+    <div class="vote-items">
+      <div class="vote-item">
+        <a href="#" class="logo-link">
+          <img src="../img/square.png" alt="Item 1" class="item-logo">
+        </a>
+        <h3>Product</h3>
+        <span class="vote-count">Votes to Kill: 0</span><br>
+        <span class="vote-count">Votes to Spare: 0</span>
+        <div class="vote-buttons">
+          <button class="vote-button kill-btn">☠️ Kill</button>
+          <button class="vote-button delete-btn">🗑️ Delete</button>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 

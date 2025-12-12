@@ -6,8 +6,9 @@
   "license": "MIT",
   "author": "Pat von Student",
   "scripts": {
+    "start": "npx http-server -p 3000 -o",
     "lint:html": "htmlhint"
-    },
+  },
   "devDependencies": {
     "qunit": "^2.21.1"
   }

@@ -3,13 +3,14 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Google Guillotine</title>
+  <title>Submit - Google Guillotine</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/submit.css">
   <link rel="stylesheet" href="../css/vote.css">
   <script type="module" src="../js/main.js"></script>
+  <link rel="icon" href="../img/favicon.svg" sizes="any" type="image/svg+xml">
 </head>
 
 <body>
@@ -37,18 +38,19 @@
         <input class="submit-input" type="url" id="product-url" name="product-url" placeholder="ex. https://www.google.com/">
 
         <label class="submit-label" for="product-image">Product Logo URL:</label>
-        <input class="submit-input" type="url" id="product-image" name="product-image" placeholder="Please link a square and transparent image">
+        <input class="submit-input" type="url" id="product-image" name="product-image" placeholder="Please link a transparent image">
 
         <button type="submit" class="submit-button">Submit</button>
       </form>
 
       <div class="vote-item card-preview">
-        <img src="../img/square.jpg" alt="Item 1" class="item-logo">
-        <h3>PRODUCT</h3>
+        <img src="../img/square.png" alt="Item 1" class="item-logo">
+        <h3>Product</h3>
         <div class="vote-buttons">
           <button class="vote-button kill" disabled>🔪 Kill</button>
           <button class="vote-button spare" disabled>😇 Spare</button>
         </div>
+        <p style="margin: 20px 0 0 0;" class="vote-count">Preview</p>
       </div>
 
     </div>

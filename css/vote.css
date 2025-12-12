@@ -5,6 +5,9 @@
     width: 70vw;
     height: min-content;
     margin: 100px auto auto auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .filter-input {
@@ -18,6 +21,23 @@
     box-shadow: 0px 3px 10px 0px rgba(31, 31, 31, 0.14);
 }
 
+.filter-refresh {
+    height: 45px;
+    border-radius: 99px;
+    border: none;
+    background-color: var(--blue);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color .2s ease, color .2s ease;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.filter-refresh:hover {
+    background-color: var(--darkblue);
+}
+
 /*====================== VOTING AREA ======================*/
 
 .vote-items {
@@ -25,9 +45,6 @@
     height: max-content;
     margin: 40px auto;
     box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 60px;
@@ -53,6 +70,13 @@
     width: 150px;
     height: 150px;
     margin-bottom: 10px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.logo-link {
+    display: block;
+    text-decoration: none;
 }
 
 .vote-item h3 {
@@ -89,4 +113,61 @@
 
 .spare:hover {
     background-color: var(--darkgreen);
+}
+
+.vote-count {
+    margin: 6px 0;
+    font-size: 12pt;
+    color: var(--gray);
+}
+
+.voted {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 14pt;
+    cursor: not-allowed;
+}
+
+.voted-kill {
+    background-color: var(--red);
+}
+
+.voted-spare {
+    background-color: var(--green);
+}
+
+.kill-btn {
+    background-color: var(--red);
+}
+
+.delete-btn {
+    background-color: var(--darkred);
+}
+
+/*====================== ADD CARD ======================*/
+
+.add-card {
+    width: 100%;
+    height: 100%;
+    min-height: 305px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #dadce0;
+    border-radius: 18px;
+    background-color: #f3f9ff;
+    cursor: pointer;
+    transition: border-color .2s ease, background-color .2s ease;
+}
+
+.add-card:hover {
+    border-color: var(--blue);
+    background-color: #eef3ff;
+}
+
+.add-plus {
+    font-size: 64px;
+    line-height: 1;
+    color: var(--blue);
+    user-select: none;
 }
